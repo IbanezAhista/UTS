@@ -21,8 +21,10 @@ class ResultActivity : AppCompatActivity() {
         val alamat = intent.getStringExtra(AppointmentActivity.EXTRA_ALAMAT)
         val tanggal = intent.getStringExtra(AppointmentActivity.EXTRA_TANGGAL)
         val waktu = intent.getStringExtra(AppointmentActivity.EXTRA_WAKTU)
-
-
+        val nama = intent.getStringExtra(AppointmentActivity.EXTRA_NAMA)
+        val identitas = intent.getStringExtra(AppointmentActivity.EXTRA_IDENTITAS)
+        val gender = intent.getStringExtra(AppointmentActivity.EXTRA_GENDER)
+//bug fixing
         with(binding){
             namaTxt.text = nama
             identitasTxt.text = identitas

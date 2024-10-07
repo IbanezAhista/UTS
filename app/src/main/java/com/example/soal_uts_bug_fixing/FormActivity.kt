@@ -11,7 +11,12 @@ import com.example.soal_uts_bug_fixing.databinding.ActivityFormBinding
 
 class FormActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFormBinding
+//    bug fixing 1
     companion object{
+        const val EXTRA_NAMA = "extra_nama"
+        const val EXTRA_IDENTITAS = "extra_identitas"
+        const val EXTRA_GENDER = "extra_gender"
+        const val EXTRA_KELUHAN = "extra_keluhan"
     }
 
     private lateinit var gendersArray : Array<String>
@@ -21,7 +26,8 @@ class FormActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFormBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        gendersArray = resources.getStringArray()
+//        bug fixing 2
+        gendersArray = resources.getStringArray(R.array.gender_descriptions)
         // Gunakan array yang sudah di buat di folder values
 
 

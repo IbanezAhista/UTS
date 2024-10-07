@@ -100,9 +100,9 @@
             android:maxLines="1"/>
 
     </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/kalender_txt"
+<!--bug fixing-->
+    <Button
+        android:id="@+id/kalender_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24sp"
@@ -115,9 +115,9 @@
         android:textSize="16sp"
         />
 
-
-    <TextView
-        android:id="@+id/timer_txt"
+<!--fix bug-->
+    <Button
+        android:id="@+id/timer_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24sp"
@@ -142,11 +142,6 @@
         android:fontFamily="@font/poppins_semibold"
         android:textColor="@color/white"/>
 
-<!--    <TimePicker-->
-<!--        android:id="@+id/timePicker"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:timePickerMode="spinner"-->
-<!--        android:layout_height="wrap_content" />-->
-
+<!--bug fixing-->
 
 </LinearLayout>
